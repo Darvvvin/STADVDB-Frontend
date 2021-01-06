@@ -1,0 +1,13 @@
+body {
+	font-family: 'Sen', sans-serif;
+}
+
+h1 {
+	font-family: 'Sen', sans-serif;
+	font-weight: 700;
+}
+
+#profile-pic {
+	border-radius: 50%;
+	width: 150px;
+}
