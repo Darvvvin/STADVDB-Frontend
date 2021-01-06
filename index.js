@@ -50,7 +50,14 @@ app.get('/usertags', function(req, res) {
 	});
 });
 
-app.get('/toptagss', function(req, res) {
+app.get('/pricerange', function(req, res) {
+	res.render('pricerange', {
+		title: 'Price Range',
+		pricerange_active: true,
+	});
+});
+
+app.get('/toptags', function(req, res) {
 	res.render('toptags', {
 		title: 'Top Tags',
 		toptags_active: true,
@@ -59,7 +66,7 @@ app.get('/toptagss', function(req, res) {
 
 app.listen(port, function() {
 	console.log('App listening at port ' + port)
-})
+});
 
 //Create Static URL
 app.use(express.static('public'));
