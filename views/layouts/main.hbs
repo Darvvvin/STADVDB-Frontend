@@ -12,20 +12,15 @@
     <link rel = "stylesheet" href="css/style.css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 
     <title>{{this.title}}</title>
   </head>
   <body>
     {{> nav}}
 
-    <div class="container">
-      <h1 class="text-left mt-4" style="font-size: 5em;"> {{this.title}} </h1>
-      <hr>
-      {{{ body }}}
-
-      <hr>
-    </div>
+    {{{ body }}}
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
