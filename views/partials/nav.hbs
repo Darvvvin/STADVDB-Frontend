@@ -6,17 +6,17 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item {{#if developer_active}} active {{/if}}">
         <a class="nav-link" href='/'>Developers <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/academics">Platforms</a>
+      <li class="nav-item {{#if platforms_active}} active {{/if}}">
+        <a class="nav-link" href="/platforms">Platforms</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/activities">User Tags</a>
+      <li class="nav-item {{#if usertag_active}} active {{/if}}">
+        <a class="nav-link" href="/usertags">User Tags</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/activities">Top Tags</a>
+      <li class="nav-item {{#if toptags_active}} active {{/if}}">
+        <a class="nav-link" href="/toptags">Top Tags</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">

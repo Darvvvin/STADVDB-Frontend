@@ -32,24 +32,28 @@ app.set('view engine', 'hbs');
 app.get('/', function(req, res) {
 	res.render('home', {
 		title: 'Developers',
+		developer_active: true,
 	})
 });
 
 app.get('/platforms', function(req, res) {
 	res.render('platforms', {
 		title: 'Platforms',
+		platforms_active: true,
 	});
 });
 
 app.get('/usertags', function(req, res) {
 	res.render('usertags', {
 		title: 'User Tags',
+		usertag_active: true,
 	});
 });
 
 app.get('/toptagss', function(req, res) {
 	res.render('toptags', {
 		title: 'Top Tags',
+		toptags_active: true,
 	});
 });
 
